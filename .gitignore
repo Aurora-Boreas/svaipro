@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+samples/
+node_modules/
+Thumbs.db
+new_gulpfile.js
+new_package.json
+less/
+old/
