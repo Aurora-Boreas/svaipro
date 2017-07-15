@@ -93,15 +93,104 @@
     </header>
 
     <main class="main-page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__wrapper">
+          <ul>
+            <li>
+              <a href="/" >Главная</a>
+            </li>
+            <li>
+              <span>Контакты</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="contacts-page">
+        <div class="contacts-page__wrapper">
+          <h2 class="contacts-page__title">Контакты</h2>
+
+          <div class="contacts-page__top">
+            <div class="contacts-page__text">
+              <div class="contacts-page__promo">
+                <p>- Нужен свайный фундамент? <b>Звоните, сделаем!</b></p>
+                <p>- Сложный участок? <b>Не беда, справимся!</b></p>
+                <p>- Проблемные грунты? <b>Имеем опыт, всё решим!</b></p>
+              </div>
+
+              <p>Мы всегда будем стараться сделать всё, чтобы клиенты были довольны нашей работой. Если у вас возникли вопросы, позвоните наши специалисты всегда на связи! Нужна консультация по типу фундамента или срокам строительства - звоните, наши инженеры с удовольствием ответят вам!</p>
+              <p>Звоните. Пишите. Спрашивайте. Присылайте проекты. Высказывайте пожелания. Предлагайте идеи. Нам интересны сложные заказы - это наша работа. Ждём ваших звонков и заявок. Мы рады сотрудничеству с вами!</p>
+            </div>
+
+            <div class="contacts-page__contacts">
+              <div class="contacts-page__contacts-item contacts-page__contacts-item--phone">
+                  <b>Телефон:</b>
+                  <p>+7 495 644 60 80</p>
+                  <p>+7 800 333 11 11 <span>бесплатно по РФ</span></p>
+                </div>
+                <div class="contacts-page__contacts-item contacts-page__contacts-item--email">
+                  <b>E-mail:</b>
+                  <p><span>для запросов:</span> info@svai.pro</p>
+                  <p><span>отдел снабжения:</span> snab@svai.pro</p>
+                  <p><span>отдел кадров:</span> kad@svai.pro</p>
+                </div>
+                <div class="contacts-page__contacts-item contacts-page__contacts-item--worktime">
+                  <b>Режим работы:</b>
+                  <p><span>ПН.-ПТ.: с 9.00 до 18.00 </span></p>
+                  <p>Звонки принимаются с 9.00 до 21.00</p>
+                  <p>Без перерывов и выходных</p>
+                </div>
+                <div class="contacts-page__contacts-item contacts-page__contacts-item--address">
+                  <b>Адрес:</b>
+                  <p><span>Москва, ул. 2я Рощинская, д.4, офисный центр Электрон </span></p>
+                  <p>Встреча в офисе по предварительной договоренности</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="contacts-page__bottom">
+            <div class="send-us">
+              <h3 class="send-us__title">Напишите нам</h3>
+              <div class="send-us__item">
+                <label for="name" class="send-us__label">ФИО <sup>*</sup></label>
+                <input type="text" class="send-us__input" name="name" id="name" required>
+              </div>
+              <div class="send-us__item">
+                <label for="email" class="send-us__label">Электронная почта <sup>*</sup></label>
+                <input type="text" class="send-us__input" name="email" id="email" required>
+              </div>
+              <div class="send-us__item">
+                <label for="phone" class="send-us__label">Телефон </label>
+                <input type="text" class="send-us__input" name="phone" id="phone">
+              </div>
+              <div class="send-us__item">
+                <label for="message" class="send-us__label">Сообщение <sup>*</sup></label>
+                <textarea class="send-us__input" name="message" id="message" rows="4" required></textarea>
+              </div>
+              <div class="send-us__footnote">
+                <input type="checkbox" id="send-us_checkbox" name="send-us_checkbox" required>
+                <label for="send-us_checkbox">В соответствии с п.1 ст.18 Федерального закона от 13.03.2006 №38-AP, даю свое согласие на получение рекламы по указанным телефонному номеру и адресу электронной почты.</label>
+              </div>
+              <button class="btn btn--send">Отправить сообщение</button>
+            </div>
+            <div class="map">
+              <h3 class="map__title">Мы на карте</h3>
+              <picture>
+                <source media="(min-width: 1150px)" srcset="./images/map.jpg">
+                <img class="map__img map__img--hidden" src="images/map.jpg" width="375" height="375" alt="Как добраться">
+             </picture>
 
 
-        <div class="content">
+              <div class="map__iframe map__iframe--hidden" id="contacts-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7560.843097856495!2d37.612572346895526!3d55.70894251533709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b4227bd2679%3A0x2759d4876e6659e8!2zMi3RjyDQoNC-0YnQuNC90YHQutCw0Y8g0YPQuy4sIDQsINCc0L7RgdC60LLQsCwgMTE1MTkx!5e0!3m2!1sru!2sru!4v1499941309507" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+          </div>
 
         </div>
+      </section>
 
     </main>
 
-    <footer>
+    <footer class="footer-page">
       <section class="footer-advanced">
         <div class="footer-advanced__wrapper">
           <div class="footer-advanced__item footer-advanced__item--experience">
@@ -138,7 +227,7 @@
           <a href="index.html" class="footer-bottom__logo">Svai.pro</a>
           <p class="footer-bottom__text">Строительство свайных фундаментов</p>
           </div>
-          <div class="footer-bottom__item">
+          <div class="footer-bottom__item footer-bottom__item--foundation">
             <p class="footer-bottom__title">Фундаменты</p>
             <ul class="footer-bottom__list">
               <li><a href="">Забивные сваи</a></li>
@@ -158,15 +247,15 @@
             </ul>
           </div>
           <div class="footer-bottom__item">
-            <p class="footer-bottom__title">Наш адрес</p>
+            <p class="footer-bottom__title">Наш адрес:</p>
             <ul class="footer-bottom__list">
               <li><span>Москва,</span></li>
               <li><span>пр-т Мира, 95, оф. 106</span></li>
               <li><span>пн-пт: с 10.00 - 18.00</span></li>
             </ul>
           </div>
-          <div class="footer-bottom__item">
-            <p class="footer-bottom__title">Связаться с нами</p>
+          <div class="footer-bottom__item footer-bottom__item--contacts">
+            <p class="footer-bottom__title">Связаться с нами:</p>
             <ul class="footer-bottom__list">
               <li><a href="tel: +7 495 124-45-67">+7 (495) 124-45-67</a></li>
               <li><a href="">закажите обратный звонок</a></li>
@@ -186,5 +275,13 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.js"></script>
+    <script>
+      var frame = document.querySelector(".map__iframe");
+      var image = document.querySelector(".map__img");
+      if (frame) {
+        frame.classList.remove("map__iframe--hidden");
+        image.classList.add("map__img--hidden");
+      };
+    </script>
   </body>
 </html>

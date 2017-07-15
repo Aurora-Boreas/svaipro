@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
 
   </head>
   <body>
@@ -94,8 +95,110 @@
 
     <main class="main-page">
 
-
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__wrapper">
+            <ul>
+              <li>
+                <a href="/" >Главная</a>
+              </li>
+              <li>
+                <a href="/" >Свайные фундаменты</a>
+              </li>
+              <li>
+                <span>Забивные сваи</span>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="content">
+
+          <section class="gallery">
+              <div class="gallery__wrapper">
+                <h3 class="gallery__title">Фото объектов</h3>
+                 <div class="gallery__item">
+
+                    <ul id="image-gallery" class="gallery__items cS-hidden" >
+                      <li class="gallery__slider-item" data-thumb="images/gallery/1.jpg">
+                        <img src="images/gallery/1.jpg" />
+                        <h4>image1</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/2.jpg">
+                        <img src="images/gallery/2.jpg" />
+                        <h4>image2</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/3.jpg">
+                        <img src="images/gallery/3.jpg" />
+                        <h4>image3</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/4.jpg">
+                        <img src="images/gallery/4.jpg" />
+                        <h4>image4</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/5.jpg">
+                        <img src="images/gallery/5.jpg" />
+                        <h4>image5</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/4.jpg">
+                        <img src="images/gallery/4.jpg" />
+                        <h4>image4</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/3.jpg">
+                        <img src="images/gallery/3.jpg" />
+                        <h4>image3</h4>
+                      </li>
+
+                      <li class="gallery__slider-item" data-thumb="images/gallery/2.jpg">
+                        <img src="images/gallery/2.jpg" />
+                        <h4>image2</h4>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+          <div class="content__wrapper">
+            <section class="useful">
+              <div class="useful-know">
+                <h3 class="useful-know__title">Полезно знать</h3>
+                <ul class="useful-know__list">
+                  <li class="useful-know__list-item">
+                    <b class="useful-know__subtitle">Как правильно выбирать фундамент. Советы специалиста</b>
+                    <p class="useful-know__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam distinctio earum corrupti voluptates accusantium, labore et quis a, dignissimos iusto at odit fugiat eveniet porro!</p>
+                  </li>
+                  <li class="useful-know__list-item">
+                    <b class="useful-know__subtitle">Как правильно выбирать фундамент. Советы специалиста</b>
+                    <p class="useful-know__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam distinctio earum corrupti voluptates accusantium, labore et quis a, dignissimos iusto at odit fugiat eveniet porro!</p>
+                  </li>
+                  <li class="useful-know__list-item">
+                    <b class="useful-know__subtitle">Как правильно выбирать фундамент. Советы специалиста</b>
+                    <p class="useful-know__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam distinctio earum corrupti voluptates accusantium, labore et quis a, dignissimos iusto at odit fugiat eveniet porro!</p>
+                  </li>
+                </ul>
+                <a href="" class="btn btn--detalis btn--articles">Посмотреть все статьи</a>
+              </div>
+              <div class="useful-video">
+                <h3 class="useful-video__title">Видео объектов</h3>
+                <div class="useful-video__img">
+                  <img src="images/video.jpg" alt=""  width="316" height="198">
+                </div>
+                <p class="useful-video__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, magnam optio officia explicabo voluptatem maxime doloribus illum dolores ea aperiam?</p>
+                <a href="" class="btn btn--detalis btn--video">Перейти в галерею</a>
+              </div>
+            </section>
+          </div>
 
         </div>
 
@@ -186,5 +289,22 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script>
+       $(document).ready(function() {
+        $('#image-gallery').lightSlider({
+          gallery:true,
+          item:1,
+          thumbItem:9,
+          slideMargin: 0,
+          speed:1000,
+          auto:true,
+          loop:true,
+          onSliderLoad: function() {
+             $('#image-gallery').removeClass('cS-hidden');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
